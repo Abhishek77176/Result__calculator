@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CGPA Calc.</title>
+</head>
+<body>
+  <main id="new">
+    <h3>Enter SGPA for corresponding Semester</h3>
+    <form onsubmit="calculateCGPA(event)">
+    <span>Semester 1 : </span><input type="number" id="sem1" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA ex :- 7.55" />
+    <span>Semester 2 : </span><input type="number" id="sem2" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA"/>
+    <span>Semester 3 : </span><input type="number" id="sem3" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA"/>
+    <span>Semester 4 : </span><input type="number" id="sem4" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA"/>
+    <input type="submit" value="Calculate">
+    <p id="demo3" class="res"></p>
+  </form>
+  </main>
+  <script src="CGPA.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+  background-color: #FAF0D7;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #765827;
+}
+main{
+  max-width: 350px;
+  margin: auto;
+  margin-bottom: 180px;
+  background-color: #FFD6A5;
+  padding: 13px;
+  margin-top: 15px;
+}
+h1,h2,span{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[type="submit"] {
+  background-color: #0d42e0;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="number"]{
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #3230d1;
+  border-radius: 4px;
+  width: 90%;
+}
+span{
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #535d65;
+}
+h1{
+  color: goldenrod;
+  display: inline-block;
+}
+h2{
+  color: #068FFF;
+}
+footer{
+  background-color: black;
+  text-align: center;
+  color: azure;
+}
+#currentYear{
+  color: white;
+  padding: 10px;
+}
+.res{
+  font-size: 20px;
+  color: #0d42e0;
+}
+p{
+  color: yellow;
+}
+#CGPA{
+  margin-right: 5px;
+}
+a{
+  color: goldenrod;
+}
+a:hover {
+  color: darkgoldenrod; 
+}
+h5{
+  color: #0d42e0;
+  font-size: 25px;
+  margin: 5px;
+}
+#new{
+  align-items: center;
+}
+.down{
+  display: none;
+}
