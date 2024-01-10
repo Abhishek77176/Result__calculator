@@ -12,9 +12,8 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-dark container">
-      <h1>Result calculator</h1>
-      <h4 id="CGPA"><a href="/CGPA.html">CGPA</a></h4>
+    <nav class="navbar navbar-dark container" style="text-align: center;">
+      <h1 style="text-align: center;">Result calculator</h1>
     </nav>
     <h5 class="container">Calculate your SGPA & Percentage : </h5>
   </header>
@@ -22,20 +21,20 @@
     <form onsubmit="calculateSGPA(event)">
 
     <h2>Theory Subject</h2>
-    <span>Probability & Statistics : </span><input type = "number" id="pas" min = "40" max="100" placeholder="Enter your Total (In + Ex) marks" required><br><br>
-    <span>Database Management System : </span><input type= "number" id="dbms" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
-    <span>Python Programming : </span><input type= "number" id="pp" min ="40"  max="100" placeholder="Enter your Total marks" required><br><br>
-    <span>Operating System : </span><input type= "number" id="os" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
-    <span>Web Technologies : </span><input type= "number"  id="wt" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
-    <span>Computer Arch. & Microp. : </span><input type= "number" id="cam" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
+    <span>Programming in Java : </span><input type = "number" id="java" min = "40" max="100" placeholder="Enter your Total (In + Ex) marks" required><br><br>
+    <span>Discrete Mathematics : </span><input type= "number" id="dm" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
+    <span>Internet of Things : </span><input type= "number" id="iot" min ="40"  max="100" placeholder="Enter your Total marks" required><br><br>
+    <span>Theory of Computation : </span><input type= "number" id="toc" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
+    <span>Electve Subject : </span><input type= "number"  id="el" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
+    <!-- <span>Computer Arch. & Microp. : </span><input type= "number" id="cam" min = "40" max="100" placeholder="Enter your Total marks" required><br><br> -->
 
 
     <h2>Lab Subjects</h2>
-    <span>Database Management System Lab. : </span><input type= "number" id="dbmsl" min = "20" max = "50" placeholder="Enter your Total marks" required><br><br>
-    <span>Python Programming Laboratory : </span><input type= "number" id="ppl" min = "20" max = "50" placeholder="Enter your Total marks" required><br><br>
-    <span>OS & Microprocessors Laboratory : </span><input type= "number" id="osml" min = "20" max = "50" placeholder="Enter your Total marks" required><br><br>
-    <span>Web Technologies Laboratory  : </span><input type= "number"  id="wtl" min = "20" max = "50" placeholder="Enter your Total marks" required><br><br>
-    <span>Mentoring and Professional Dev. : </span><input type= "number" id="mpd" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
+    <span>Programming in Java Lab. : </span><input type= "number" id="javal" min = "20" max = "50" placeholder="Enter your Total marks" required><br><br>
+    <span>Internet of Things Laboratory : </span><input type= "number" id="iotl" min = "20" max = "50" placeholder="Enter your Total marks" required><br><br>
+    <span>Electve Laboratory : </span><input type= "number" id="ell" min = "20" max = "50" placeholder="Enter your Total marks" required><br><br>
+    <!-- <span>Web Technologies Laboratory  : </span><input type= "number"  id="wtl" min = "20" max = "50" placeholder="Enter your Total marks" required><br><br> -->
+    <span>Training-II : </span><input type= "number" id="trii" min = "40" max="100" placeholder="Enter your Total marks" required><br><br>
 
     <input type="submit" value="Calculate">
 
@@ -43,8 +42,19 @@
     <div id="dm">
       <p id="demo" class="res"></p>
       <p id="demo2" class="res"></p>
-      <h4 id="CGPA" class="down">Calculate your CGPA over here : <a href="#CGPA">CGPA</a></h4>
     </div>
+  </main>
+  <main id="new">
+    <h3>Enter SGPA for corresponding Semester</h3>
+    <form onsubmit="calculateCGPA(event)">
+    <span>Semester 1 : </span><input type="number" id="sem1" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA ex :- 7.55" />
+    <span>Semester 2 : </span><input type="number" id="sem2" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA"/>
+    <span>Semester 3 : </span><input type="number" id="sem3" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA"/>
+    <span>Semester 4 : </span><input type="number" id="sem4" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA"/>
+    <span>Semester 5 : </span><input type="number" id="sem5" step="0.01" min="4.00" max="10.00" placeholder="Enter Your SGPA"/>
+    <input type="submit" value="Calculate">
+    <p id="demo3" style="padding-top: 8px; font-size: 24px;" class="res"></p>
+  </form>
   </main>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
