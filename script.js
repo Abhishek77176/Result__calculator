@@ -41,8 +41,8 @@ function calculateSGPA(event){
   var ell_m = parseInt(document.getElementById('ell').value);
   var ell_gpc = gpc(ell_m,50,1);
 
-  // var wtl_m = parseInt(document.getElementById('wtl').value);
-  // var wtl_gpc = gpc(wtl_m,50,1);
+  var wtl_m = parseInt(document.getElementById('wtl').value);
+  var wtl_gpc = gpc(wtl_m,50,1);
 
   // Training Marks
   var trii_m = parseInt(document.getElementById('trii').value);
@@ -51,9 +51,9 @@ function calculateSGPA(event){
   var ment_m = parseInt(document.getElementById('ment').value);
   var ment_gpc = gpc(ment_m,100,1);
 
-  var sum = java_m + dm_m + iot_m + toc_m + el_m + javal_m + iotl_m + ell_m + trii_m + ment_m;
+  var sum = java_m + dm_m + iot_m + toc_m + el_m + javal_m + iotl_m + ell_m + trii_m + ment_m + wtl_m;
   document.getElementById("demo").textContent = "Your Percentage is : " + (sum*100/900).toFixed(2) + "%";
-  var SGPA = (java_gpc + dm_gpc + iot_gpc + toc_gpc + el_gpc + javal_gpc + iotl_gpc + ell_gpc + trii_gpc + ment_gpc)/24;
+  var SGPA = (java_gpc + dm_gpc + iot_gpc + toc_gpc + el_gpc + javal_gpc + iotl_gpc + wtl_gpc+ ell_gpc + trii_gpc + ment_gpc)/24;
   document.getElementById("demo2").textContent = "Your SGPA is : " + (SGPA).toFixed(2);
 
   const element = document.getElementsByClassName('down')[0];
