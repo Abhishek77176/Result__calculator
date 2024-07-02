@@ -48,9 +48,12 @@ function calculateSGPA(event){
   var trii_m = parseInt(document.getElementById('trii').value);
   var trii_gpc = gpc(trii_m,100,1);
 
-  var sum = java_m + dm_m + iot_m + toc_m + el_m + javal_m + iotl_m + ell_m + trii_m;
+  var ment_m = parseInt(document.getElementById('ment').value);
+  var ment_gpc = gpc(ment_m,100,1);
+
+  var sum = java_m + dm_m + iot_m + toc_m + el_m + javal_m + iotl_m + ell_m + trii_m + ment_m;
   document.getElementById("demo").textContent = "Your Percentage is : " + (sum*100/750).toFixed(2) + "%";
-  var SGPA = (java_gpc + dm_gpc + iot_gpc + toc_gpc + el_gpc + javal_gpc + iotl_gpc + ell_gpc + trii_gpc)/23;
+  var SGPA = (java_gpc + dm_gpc + iot_gpc + toc_gpc + el_gpc + javal_gpc + iotl_gpc + ell_gpc + trii_gpc + ment_gpc)/24;
   document.getElementById("demo2").textContent = "Your SGPA is : " + (SGPA).toFixed(2);
 
   const element = document.getElementsByClassName('down')[0];
@@ -70,7 +73,8 @@ function calculateCGPA(event){
   var sem_3 = parseFloat(document.getElementById('sem3').value);
   var sem_4 = parseFloat(document.getElementById('sem4').value);
   var sem_5 = parseFloat(document.getElementById('sem5').value);
-  var total = ((sem_1*20) + (sem_2*21) + (sem_3*21) + (sem_4*23) + (sem_5*23))/108;
+  var sem_6 = parseFloat(document.getElementById('sem6').value);
+  var total = ((sem_1*20) + (sem_2*21) + (sem_3*21) + (sem_4*23) + (sem_5*23) + (sem_6*24))/132;
   document.getElementById('demo3').textContent = "Your CGPA is : " + total.toFixed(2);
 }
 
