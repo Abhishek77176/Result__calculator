@@ -33,7 +33,7 @@ function calculateSGPA(event){
 
   // Getting marks of Lab subject
   var javal_m = parseInt(document.getElementById('javal').value);
-  var javal_gpc = gpc(javal_m,50,2);
+  var javal_gpc = gpc(javal_m,50,1);
 
   var iotl_m = parseInt(document.getElementById('iotl').value);
   var iotl_gpc = gpc(iotl_m,50,1);
@@ -52,7 +52,7 @@ function calculateSGPA(event){
   var ment_gpc = gpc(ment_m,100,1);
 
   var sum = java_m + dm_m + iot_m + toc_m + el_m + javal_m + iotl_m + ell_m + trii_m + ment_m;
-  document.getElementById("demo").textContent = "Your Percentage is : " + (sum*100/750).toFixed(2) + "%";
+  document.getElementById("demo").textContent = "Your Percentage is : " + (sum*100/900).toFixed(2) + "%";
   var SGPA = (java_gpc + dm_gpc + iot_gpc + toc_gpc + el_gpc + javal_gpc + iotl_gpc + ell_gpc + trii_gpc + ment_gpc)/24;
   document.getElementById("demo2").textContent = "Your SGPA is : " + (SGPA).toFixed(2);
 
