@@ -1,6 +1,10 @@
 body{
   background-color: #FF90C2;
 }
+.main-heading{
+  color:black;
+  margin-left: 500px;
+}
 nav{
   color: white;
   background-color: #1640D6;
